@@ -10,9 +10,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://helm.min.io/"
-    targetRevision: 8.0.10
-    chart: "minio/minio"
+    repoURL: "https://operator.min.io"
+    targetRevision: 4.3.7
+    chart: "minio-operator/minio-operator"
     helm: 
       releaseName: "kube-prometheus-stack"
       skipCrds: true
