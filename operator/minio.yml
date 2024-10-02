@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://operator.min.io/minio-operator"
+    repoURL: "https://operator.min.io/"
     targetRevision: 4.3.7
     chart: "minio-operator"
     helm: 
