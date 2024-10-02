@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: minio
+  name: operator
   namespace: argocd
   labels:
     app: prometheus-operator
@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: "https://operator.min.io/"
     targetRevision: 4.3.7
-    chart: "minio-operator"
+    chart: "operator"
     helm: 
       releaseName: "kube-prometheus-stack"
       skipCrds: true
