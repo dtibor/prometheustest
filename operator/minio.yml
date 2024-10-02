@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: "https://helm.min.io"
+    repoURL: "https://helm.min.io/"
     targetRevision: 8.0.10
     chart: "minio/minio"
     helm: 
