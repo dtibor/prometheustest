@@ -16,6 +16,10 @@ spec:
     helm: 
       releaseName: "kube-prometheus-stack"
       skipCrds: true
+      values: |
+        prometheus:
+          prometheusSpec:
+            enableRemoteWriteReceiver: true
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-prometheus-stack
