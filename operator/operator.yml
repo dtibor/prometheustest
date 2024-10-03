@@ -19,7 +19,8 @@ spec:
       values: |
         prometheus:
           prometheusSpec:
-            - url: remoteWrite: "http://kube-prometheus-stack-prometheus.kube-prometheus-stack-mimir-ingester-zone-a:9095/metrics"
+            remoteWrite:
+            - url: "http://kube-prometheus-stack-prometheus.kube-prometheus-stack-mimir-ingester-zone-a:9095/metrics"
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-prometheus-stack
