@@ -18,10 +18,8 @@ spec:
       skipCrds: true
       values: |
         prometheus:
-          remote_write:
-            - url: http://kube-prometheus-stack-prometheus.kube-prometheus-stack:9090/api/v1/push
           prometheusSpec:
-            enableRemoteWriteReceiver: true
+            remoteWrite: http://kube-prometheus-stack-prometheus.kube-prometheus-stack-mimir-ingester-zone-a:9095/metrics
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-prometheus-stack
