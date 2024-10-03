@@ -18,6 +18,8 @@ spec:
       skipCrds: true
       values: |
         prometheus:
+          remote_write:
+            - url: http://kube-prometheus-stack-prometheus.kube-prometheus-stack:9090/api/v1/push
           prometheusSpec:
             enableRemoteWriteReceiver: true
   destination:
