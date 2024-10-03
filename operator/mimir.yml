@@ -16,9 +16,6 @@ spec:
     helm: 
       releaseName: "kube-prometheus-stack"
       skipCrds: true
-      values: |
-        minio:
-          enabled: false
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-prometheus-stack
