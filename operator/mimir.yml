@@ -16,8 +16,6 @@ spec:
     helm: 
       releaseName: "kube-prometheus-stack"
       skipCrds: true
-      values: |
-        write: http://kube-prometheus-stack-prometheus.kube-prometheus-stack:9090/api/v1/push
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-prometheus-stack
