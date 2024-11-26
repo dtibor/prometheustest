@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: minio
+  namespace: argocd
+spec:
+  destination:
+    namespace: mimir
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: 'https://github.com/dtibor/prometheustest'
+    targetRevision: HEAD
+    path: apps/minio
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

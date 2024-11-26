@@ -1,0 +1,8 @@
+gateway:
+  replicas: 3
+  resources:
+    limits:
+      memory: 731Mi
+    requests:
+      cpu: 1
+      memory: 512Mi
