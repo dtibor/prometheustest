@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: 'https://github.com/dtibor/prometheustest'
     targetRevision: HEAD
-    path: app-of-apps  # Path to this file in the repository
+    path: mimir-apps/app-of-apps  # Path to this file in the repository
   syncPolicy:
     automated:
       prune: true
