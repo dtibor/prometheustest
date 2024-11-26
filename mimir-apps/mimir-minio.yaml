@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: app-of-apps
-    repoURL: 'git@github.com:your-org/your-repo.git'
+    path: mimir-apps/app-of-apps
+    repoURL: 'https://github.com/dtibor/prometheustest'
     targetRevision: HEAD
   syncPolicy:
     automated:
